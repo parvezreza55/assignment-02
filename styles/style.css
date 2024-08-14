@@ -371,19 +371,105 @@ input[type="text"] {
 }
 
 /* meet our team section related styles here  */
-
-.trainer {
+.meet-our-team .section-title {
+  text-align: center;
+  margin-top: 5.5rem;
+}
+.meet-our-team .section-description {
+  text-align: center;
+  opacity: 0.5;
+  margin-top: 0.875rem;
+  margin-bottom: 3.63rem;
+}
+#trainaer-1 {
   background: url("../images/trainer1.png");
   background-size: cover;
+  background-position: center top;
   background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+}
+#trainaer-2 {
+  background: url("../images/trainer2.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+}
+#trainaer-3 {
+  background: url("../images/trainer3.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+}
+#trainaer-4 {
+  background: url("../images/trainer4.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+}
+#trainaer-5 {
+  background: url("../images/trainer5.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+}
+#trainaer-6 {
+  background: url("../images/trainer6.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+}
+.trainer {
   height: 270px;
-  width: 390px;
+  width: 366px;
   border-radius: 1.125rem;
+
+  position: relative;
 }
 .trainers-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
+  padding: 1.5rem;
+  background-color: rgba(34, 34, 34, 1);
+  justify-items: center;
+  border-radius: 1rem;
+}
+.trainer-div {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+.trainer-div .trainer-name {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.trainer-div .teach-position {
+  font-size: 0.875rem;
+  opacity: 0.5;
+  line-height: 1.4rem;
+}
+
+/* footer relates styles here  */
+.footer-description .section-title {
+  font-size: 4.375rem;
+  font-style: italic;
+  color: var(--backgroun-color);
+  font-weight: 900;
+}
+.get-started .section-title {
+  font-size: 2rem;
+  font-weight: 700;
 }
 /* media query related styles */
 
@@ -474,6 +560,16 @@ input[type="text"] {
     text-align: left;
     margin-left: 1rem;
   }
+  /* meet our team  */
+  .trainers-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .trainer {
+    width: calc(100% - 0.2rem);
+  }
+  .hidden {
+    display: none;
+  }
 }
 
 /* for tablet screen  */
@@ -503,5 +599,8 @@ input[type="text"] {
 
   input[type="text"] {
     width: calc(100% - 2rem);
+  }
+  .trainer {
+    width: 95%;
   }
 }
