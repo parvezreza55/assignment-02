@@ -370,6 +370,8 @@ input[type="text"] {
   margin-top: 2.125rem;
 }
 
+/* our instrument section related styles  */
+
 /* meet our team section related styles here  */
 .meet-our-team .section-title {
   text-align: center;
@@ -477,6 +479,10 @@ footer {
   margin-bottom: 2.43rem;
   font-weight: 700;
 }
+.footer-description .section-description {
+  font-size: 0.875rem;
+  opacity: 0.5;
+}
 #description {
   grid-area: p;
 }
@@ -497,6 +503,11 @@ footer {
   margin-bottom: 4rem;
 }
 
+.get-started ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+}
 .get-started ul li {
   list-style: none;
 }
@@ -505,8 +516,11 @@ footer {
   flex-direction: column;
   gap: 1.25rem;
 }
+
 .copy-right {
   text-align: center;
+  font-size: 1.25rem;
+  opacity: 0.5;
   margin-top: 2.1rem;
   padding-bottom: 2.2rem;
 }
