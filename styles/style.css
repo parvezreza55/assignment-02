@@ -371,7 +371,43 @@ input[type="text"] {
 }
 
 /* our instrument section related styles  */
+.out-instrument .section-title {
+  text-align: center;
+  margin-top: 5rem;
+}
+.out-instrument .section-description {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+.instrument-card .card-desc {
+  font-size: 0.875rem;
+  opacity: 0.5;
+  padding-bottom: 1rem;
+  padding: 1rem;
+}
 
+.instrument-card img {
+  height: 370px;
+  width: 350px;
+}
+.instrument-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  align-items: center;
+}
+.instrument-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 4px 20px rgba(255, 255, 255, 0.1);
+}
 /* meet our team section related styles here  */
 .meet-our-team .section-title {
   text-align: center;
@@ -560,7 +596,7 @@ footer {
   }
   .upper-div {
     top: 5%;
-    right: -8%;
+    right: -2%;
   }
 
   .banner-title {
@@ -640,6 +676,14 @@ footer {
   .get-started .section-title {
     margin-bottom: 2rem;
   }
+  .instrument-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* justify-items: center; */
+  }
+  .instrument-card img {
+    width: calc(100% - 1rem);
+  }
 }
 
 /* for tablet screen  */
@@ -672,5 +716,13 @@ footer {
   }
   .trainer {
     width: 95%;
+  }
+  .footer-div-container {
+    padding-top: 4.125rem;
+    display: grid;
+    grid-template-areas:
+      "p p p p"
+      "q q r r";
+    gap: 2rem;
   }
 }
